@@ -1,0 +1,11 @@
+<h1><%= params[:user_name]%></h1>
+
+<ul>
+  <% @favorites.each do |fav| %>
+    <li>
+        <%= fav.id %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Nouvelle Recette", "/new_recipe?user_name="+params[:user_name] %>
