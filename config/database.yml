@@ -8,14 +8,14 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  password: admin
+  password: root
   username: postgres
 
 development:
   adapter: postgresql
   database: ruby
   username: postgres # replace this with your own user name
-  password: admin # replace this with your own password
+  password: root # replace this with your own password
   host: localhost
   encoding: UTF8
   pool: 5
