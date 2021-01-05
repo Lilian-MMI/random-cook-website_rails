@@ -1,8 +1,8 @@
 Rails.application.routes.draw do    
   root "index#index"
 
-  get "/profil", to: "profil#index"
-  get "/new_recipe", to: "profil#new_recipe"
+  resources :profil
 
-  post "/traitement_recipe", to: "profil#traitement_recipe"
+  get "/recipe", to:"recipe#index"
+  resources :recipe
 end
