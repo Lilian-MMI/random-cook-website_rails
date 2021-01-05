@@ -11,7 +11,7 @@
   },
   {
     "step_number" : 3,
-    "description": "**Meatball mix:** In a large bowl, mix well:\n- the ground meat\n- the white from 1 egg (save the yolk for the avgolemono)\n- the parsley and dill (if using dried, about 1 tbsp each, adjust accordingly for fresh (which is preferable)\n- 3 tbsp olive oil\n- 2 tsp salt\n- Some pepper\n\nMix it very well and once it's thoroughly mixed, add 100 g of the cauliflower rice.\n!",
+    "description": "Meatball mix: In a large bowl, mix well:\n- the ground meat\n- the white from 1 egg (save the yolk for the avgolemono)\n- the parsley and dill (if using dried, about 1 tbsp each, adjust accordingly for fresh (which is preferable)\n- 3 tbsp olive oil\n- 2 tsp salt\n- Some pepper\n\nMix it very well and once it's thoroughly mixed, add 100 g of the cauliflower rice.\n!",
     "recipe_id" : 1
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "step_number" : 7,
-    "description": "**Avgolemono (egg-lemon sauce)**: Beat the 2 eggs and remaining yolk with the juice of the two lemons and when they are homogenized well, start very slowly pouring the cup of stock into the mixture, a little at a time, while beating the mixture with a whisk (ideally an electric whisk). **This needs patience. ** If you don't do this slowly enough, the avgolemono will fail. You need to maintain a homogeneous consistency as you whisk. Doing it too fast will cook the egg and you'll have disgusting cooked bits of egg white floating in your avgolemono (there is even an expression for this in Greek).",
+    "description": "Avgolemono (egg-lemon sauce): Beat the 2 eggs and remaining yolk with the juice of the two lemons and when they are homogenized well, start very slowly pouring the cup of stock into the mixture, a little at a time, while beating the mixture with a whisk (ideally an electric whisk). **This needs patience. ** If you don't do this slowly enough, the avgolemono will fail. You need to maintain a homogeneous consistency as you whisk. Doing it too fast will cook the egg and you'll have disgusting cooked bits of egg white floating in your avgolemono (there is even an expression for this in Greek).",
     "recipe_id" : 1
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "step_number" : 9,
-    "description": "**That's it!** Serve in bowls, with plenty of liquid. This dish can have a range of consistencies and they're all ok: with a thicker liquid, it's more of a sauce, whereas thinner liquid (like in the picture), is more like soup. Up to you!",
+    "description": "That's it! Serve in bowls, with plenty of liquid. This dish can have a range of consistencies and they're all ok: with a thicker liquid, it's more of a sauce, whereas thinner liquid (like in the picture), is more like soup. Up to you!",
     "recipe_id" : 1
   },
   {
@@ -88,5 +88,445 @@
     "step_number" : 5,
     "description": "Done! Add to your ice cream machine per manufacturer's instructions or freeze and stir every 30 minutes or so.",
     "recipe_id" : 3
+  },
+  {
+    "step_number" : 1,
+    "description": "Cut the bacon into lardons and sauté until it's lightly cooked.",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 2,
+    "description": "While the bacon is cooking, separate the yolks from 4 of the eggs. Whisk the 4 yolks, 2 whole eggs, the grated parmesan, the cream, and salt and pepper.",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 3,
+    "description": "If using garlic, add it once the bacon is starting to get cooked and saute for a few more minutes until fragrant",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 4,
+    "description": "Stir in turnip noodles until they are cooked through to desired doneness",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 5,
+    "description": "Turn the heat down to very low and stir in the egg mixture. Stir rapidly until it cooks, remove from heat.",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 6,
+    "description": "Top with a little more ground pepper and serve!",
+    "recipe_id" : 4
+  },
+  {
+    "step_number" : 1,
+    "description": "In a blender or mini food processor, blend all the sauce ingredients, and chill in the fridge.",
+    "recipe_id" : 5
+  },
+  {
+    "step_number" : 2,
+    "description": "Blend the olive oil and garlic and coat the lamb chops.",
+    "recipe_id" : 5
+  },
+  {
+    "step_number" : 3,
+    "description": "Make the spice mix, and coat the lamb chops well on both sides.",
+    "recipe_id" : 5
+  },
+  {
+    "step_number" : 4,
+    "description": "Grill the lamb chops on a very hot cast iron grill pan (or a BBQ if you have one!) for 2-3 minutes on each side for medium rare.",
+    "recipe_id" : 5
+  },
+  {
+    "step_number" : 5,
+    "description": "Done! Serve with the sauce on the side.",
+    "recipe_id" : 5
+  },
+  {
+    "step_number" : 1,
+    "description": "Cut the eggplants in half and scoop out the center. Leave about 1-1.5cm of flesh. Carve the flesh crosswise.",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 2,
+    "description": "Season the eggplants well with olive oil, salt, pepper, thyme. Use your hands to make sure it goes everywhere. Be fast, because they absorb the oil very quickly!",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 3,
+    "description": "Put eggplants on a large baking tray, cut side down and bake at 200C (392F) for 30-40 minutes.",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 4,
+    "description": "Fry the onions in the butter on high heat.\n2. Once the onions have started to caramelize, add the garlic and fry for a few more minutes.\n3. Add the cinnamon, cloves, allspice, black pepper and give it a stir.\n4. Add the mince and bay leaves and reduce heat to medium.\n5. Once the meat has started to brown, pour in the Metaxa.\n6. Add the tomato pureé, Sukrin Gold, bouillon base, and Worcestershire sauce and stir well.\n5. Reduce heat and simmer for about half an hour or until the tomato tastes cooked and any liquids have been reduced.",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 5,
+    "description": "Melt the butter in a small pot over low heat\n2. Whisk in the coconut flour, stirring continuously to make a roux\n3. When the roux ingredients are nicely combined, whisk in the cream, adding a little each time to avoid lumps\n4. Cook it over low heat, stirring continuously\n5. When it has thickened, add nutmeg, salt, pepper to taste\n6. Take it off the heat and stir in the yolks and grated cheese",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 6,
+    "description": "Scoop the minced meat into the eggplants, and top it with the béchamel. Bake for 10 minutes at 200C (392F), checking frequently because ovens vary. You may want to turn on the grill (US: broiler) for the last 5 minutes to give the cheese a nice golden brown.",
+    "recipe_id" : 6
+  },
+  {
+    "step_number" : 1,
+    "description": "In a large bowl, toss the shrimp with 1 teaspoon of kosher salt and let stand for 10 minutes. ",
+    "recipe_id" : 7
+  },
+  {
+    "step_number" : 2,
+    "description": "Meanwhile, in a 9- to 10-inch enameled cast-iron skillet, combine the garlic and olive oil and cook over moderately low heat, stirring occasionally, until the garlic is very fragrant and just starts to brown, 8 to  10 minutes. ",
+    "recipe_id" : 7
+  },
+  {
+    "step_number" : 3,
+    "description": "Add the chile and smoked paprika and cook, stirring, until fragrant, 15 to 30 seconds.  ",
+    "recipe_id" : 7
+  },
+  {
+    "step_number" : 4,
+    "description": "Add the shrimp to the skillet and cook over medium heat, stirring and turning the shrimp occasionally, until barely pink, about 5 minutes.",
+    "recipe_id" : 7
+  },
+  {
+    "step_number" : 5,
+    "description": "Stir in the parsley, sherry, lemon zest and a generous pinch of salt. Remove from the heat and let stand until the shrimp are cooked through, 3 to 5 minutes. Serve in the skillet, passing crusty bread at the table.  ",
+    "recipe_id" : 7
+  },
+  {
+    "step_number" : 1,
+    "description": "Heat oil in a large, deep, preferably ceramic, frying pan on medium heat",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 2,
+    "description": "Cook onions until translucent, 5-10 min",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 3,
+    "description": "Add minced meat, stir until lightly browned",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 4,
+    "description": "Reduce heat a little, add jalapeño and bell pepper, cook until slightly soft. 3-4 min, do not overcook",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 5,
+    "description": "Add garlic and tomato concentrate, stir for 2 min until tomato tastes cooked not raw",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 6,
+    "description": "Add the wine. Tip: pour the wine into the tomato paste jar and shake it to get the last of the paste out.",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 7,
+    "description": "Add canned tomatoes, cumin, caraway seeds, bay leaves, paprika, erythritol, concentrated stock, and pepper. Yes, that is a lot of cumin; it will be fine. Bring to low boil, reduce heat, simmer for 20 min",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 8,
+    "description": "Place de-stemmed Swiss chard leaves on top of cooked tomato mixture. Make 8 small depressions with a spoon",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 9,
+    "description": "Crack one egg into each depression. Cover (a transparent lid is ideal)",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 10,
+    "description": "Cook until egg white is _just_ set. Serve immediately, in the pan.",
+    "recipe_id" : 8
+  },
+  {
+    "step_number" : 1,
+    "description": "Traditionally using a mortar and pestle (but a hand blender works just as well, we find) turn the garlic, anchovies and a pinch of salt into a fine paste.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 2,
+    "description": "Add the whisked egg yolks, lemon juice, Worcestershire sauce and mustard. This can be done in a bowl with a whisk, or if using a blender continue with that.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 3,
+    "description": "Gradually at first, add the oil and whisk/blend with each addition.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 4,
+    "description": "Add the Parmesan and mix well.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 5,
+    "description": "Taste, adjust with salt, pepper, lemon as desired.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 6,
+    "description": "Either shred the romaine hearts and toss with the sauce, or serve individual leaves for dipping.",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 7,
+    "description": "If liked, garnish with more whole anchovies and/or Parmesan flakes",
+    "recipe_id" : 9
+  },
+  {
+    "step_number" : 1,
+    "description": "Cut each strip of bacon into 4mm [lardons](https://en.wikipedia.org/wiki/Lardon).",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 2,
+    "description": "Fry the bacon in the butter on medium-high heat until starting to turn translucent",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 3,
+    "description": "Add sliced mushrooms. Season with black pepper.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 4,
+    "description": "Continue to fry until mushrooms release their liquid and are turning darker. ",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 5,
+    "description": "In a separate pan, fry the pepper in the coconut oil until softened and just starting to turn brown.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 6,
+    "description": "Add garlic to the mushrooms and stir until fragrant.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 7,
+    "description": "Add thyme and stir. Then add a generous splash of Worcestershire sauce.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 8,
+    "description": "Pour the cream into the mushrooms, bring to a low boil, then reduce heat.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 9,
+    "description": "Add the green peppers",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 10,
+    "description": "When the cream reduces a bit, add the grated cheese and stir until melted.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 11,
+    "description": "Grate the nutmeg into the mixture and serve.",
+    "recipe_id" : 10
+  },
+  {
+    "step_number" : 1,
+    "description": "Chop most of the onion but set a little aside for garnish",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 2,
+    "description": "Sauté garlic and onion in a bit of butter.",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 3,
+    "description": "Add the livers and sauté on both sides until they have a bit color but are still pink inside. Season with salt and pepper.",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 4,
+    "description": "Add the Metaxa and let it steam away.",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 5,
+    "description": "Put all in a tall blender glass and add the cream and remaining butter and blend until smooth",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 6,
+    "description": "Put aside in fridge for at least 4 hours and serve, garnishing with the balsamic reduction, parsley and the onion from step 1.",
+    "recipe_id" : 11
+  },
+  {
+    "step_number" : 1,
+    "description": "Wash the octopus, remove the eyes and beak, and separate the tentacles. Cut each tentacle in 2-3 pieces of roughly equal volume, same for the head.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 2,
+    "description": "Put tentacles and head in a large pot with nothing else and boil over medium heat.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 3,
+    "description": "You will notice that the octopus is releasing juices and slowly become redder. As the juices start to evaporate, slowly pour in the wine.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 4,
+    "description": "Once you've poured all wine, add cloves and bay leaves.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 5,
+    "description": "Simmer for about two hours. Half an hour before done, add the potatoes or turnips and the olives.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 6,
+    "description": "Once it's reduced and the octopus and vegetables are tender add 1tbsp olive oil, mix, and serve! Makes about 6 portions.",
+    "recipe_id" : 12
+  },
+  {
+    "step_number" : 1,
+    "description": "In a small saucepan over medium-high heat, combine the soy sauce, erythritol, ginger, garlic, mirin and sesame oil. Bring to a simmer, stirring until the erythritol has dissolved, about 1 minute. Let cool to room temperature. Reserve 1/4 cup (2 fl. oz./60 ml) of the sauce.",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 2,
+    "description": "Place the salmon fillets in separate zip lock bags and pour the remaining sauce into the bags, dividing evenly. If you have time you can let them marinate for 1-4 hours, but you don’t have to.",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 3,
+    "description": "Prepare a sous vide immersion circulator for use according to the manufacturer’s instructions. Preheat the water to 122°F (50°C). Place the bags into the circulating water and cook for 40 minutes for medium doneness.",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 4,
+    "description": "5 minutes before the salmon is done, stir fry the bean sprouts in a large pan with a tsp of sesame oil and a splash of soy sauce. Divide evenly in two plates.",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 5,
+    "description": "Once the salmon is done, sear the skin in the same pan for 30 seconds. Place each fillet on top of the bean sprouts and pour the saved sauce on it. Optionally, you can also use the sauce from the ziplock bags, but keep in mind it will be more watery (we did anyway).",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 6,
+    "description": "Garnish with the sliced spring onion and serve!",
+    "recipe_id" : 13
+  },
+  {
+    "step_number" : 1,
+    "description": "Add a lot of salt to the grated zucchini and squeeze well with a towel or cheesecloth to remove moisture.",
+    "recipe_id" : 14
+  },
+  {
+    "step_number" : 2,
+    "description": "Beat the eggs in a bowl and set aside.",
+    "recipe_id" : 14
+  },
+  {
+    "step_number" : 3,
+    "description": "In a large bowl, mix the zucchini, parsley, dill, onion, spring onion, cheeses, pepper, eggs.",
+    "recipe_id" : 14
+  },
+  {
+    "step_number" : 4,
+    "description": "Add the olive oil to the mix.",
+    "recipe_id" : 14
+  },
+  {
+    "step_number" : 5,
+    "description": "Spread on a deep, oiled baking tray and bake at 180-200C (350-390F) for about 40 minutes or until golden.",
+    "recipe_id" : 14
+  },
+  {
+    "step_number" : 1,
+    "description": "Wash the mint and parsley and make sure they are *completely dry*. A salad spinner helps, if you don’t have one you can use paper towels.",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 2,
+    "description": "Finely chop the mint and parsley, then sauté until just starting to turn crispy. Set aside.",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 3,
+    "description": "Sauté the onion with enough butter or oil until golden",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 4,
+    "description": "Add the garlic and sauté for 1-2 more minutes",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 5,
+    "description": "Add the turmeric and sauté for 2 more minutes",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 6,
+    "description": "Add the beef cubes and sauté until browned on the outside",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 7,
+    "description": "Pour in the beef stock and sautéed mint and parsley and simmer",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 8,
+    "description": "In a separate pan, sauté the celery until *just* starting to turn brown. Set aside.",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 9,
+    "description": "After the stew has been simmering for 1.5 hour, pour in the sautéed celery and simmer for another 30 minutes. This is done so that the celery doesn’t become too mushy.",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 10,
+    "description": "Finish with the lemon juice and serve.",
+    "recipe_id" : 15
+  },
+  {
+    "step_number" : 1,
+    "description": "In a mini blender or food processor, blend chiles and salt until pulverized. Add lemongrasss, ginger, galangal, turmeric, chopped shallots, garlic, shrimp paste one by one in order listed, fully pulverizing each before adding the next.",
+    "recipe_id" : 16
+  },
+  {
+    "step_number" : 2,
+    "description": "Combine curry paste, beef, soy sauce, and ground chipotle in a pot; stir to evenly coat beef. Add coconut oil and cook, stirring occasionally, over medium heat for 5 minutes. Add broth and bring to a boil. Cover, reduce heat to medium-low, and simmer, stirring occasionally, until beef is tender but not falling apart, 2-2 1/2 hours.",
+    "recipe_id" : 16
+  },
+  {
+    "step_number" : 3,
+    "description": "30 minutes before stew is done, stir in the turnip.",
+    "recipe_id" : 16
+  },
+  {
+    "step_number" : 4,
+    "description": "5 minutes before stew is done, add the halved shallots.",
+    "recipe_id" : 16
+  },
+  {
+    "step_number" : 5,
+    "description": "Garnish with cilantro and basil.",
+    "recipe_id" : 16
   }
 ]

@@ -16,5 +16,77 @@
     "description" : "Easy and decadent!",
     "url": "https://forkgasm.com/images/grand-marnier-ice-cream.jpg",
     "diet" : ["Dessert", "Ice cream"]
+  },
+  {
+    "label" : "Turnip Noodle Carbonara",
+    "description" : "A healthier version of the classic dish that tastes just as good!",
+    "url": "http://forkgasm.com/images/carbonara.jpg",
+    "diet" : "Bacon"
+  },
+  {
+    "label" : "Spiced lamb chops with mint-mango sauce",
+    "description" : "Delicious, refreshing, and super quick to make!",
+    "url": "http://forkgasm.com/images/40813912_2213541505597183_7740637805202109577_n.jpg",
+    "diet" : "Lamb"
+  },
+  {
+    "label" : "Papoutsakia",
+    "description" : "A traditional Greek dish that tastes very similar to moussaka, but is much quicker to cook. Fun fact: Papoutsakia in Greek means \\\"little shoes\\\" and a portion usually has two. However, when cooking with large American eggplants, you'll likely find that one per portion is enough.",
+    "diet" : "Greek"
+  },
+  {
+    "label" : "Gambas al Ajillo",
+    "description" : "Quick and garlicky!",
+    "url": "http://forkgasm.com/images/gambas.png",
+    "diet" : ["Seafood", "Spanish"]
+  },
+  {
+    "label" : "Shakshuka",
+    "description" : "Breakfast of champions (one of them)",
+    "diet" : ["Arabic", "Israeli", "Breakfast"]
+  },
+  {
+    "label" : "Real Caesar Salad",
+    "description" : "Based on the original 1920's Italian-American table-side recipe",
+    "diet" : ["Italian-American", "Salad"]
+  },
+  {
+    "label" : "Garlic mushrooms a la crème with lardons and green pepper",
+    "description" : "Not the most photogenic dish, but really easy, quick and delicious!",
+    "url": "http://forkgasm.com/images/mushrooms.jpg"
+  },
+  {
+    "label" : "Chicken Liver Pâté",
+    "description" : "Rich and creamy, delicious on bread or even on its own!",
+    "url": "http://forkgasm.com/images/chicken-liver-pate.jpg",
+    "diet" : ["Chicken", "Offal"]
+  },
+  {
+    "label" : "Octopus in Wine",
+    "description" : "A traditional Greek dish (Htapodi Krasato).",
+    "url": "http://forkgasm.com/images/htapodi-krasato.jpg",
+    "diet" : ["Greek", "Stew", "Seafood"]
+  },
+  {
+    "label" : "Sous Vide Salmon Teriyaki",
+    "description" : "Tender, refreshing and very easy to make!",
+    "url": "http://forkgasm.com/images/htapodi-krasato.jpg",
+    "diet" : ["Asian", "Seafood", "Sous Vide"]
+  },
+  {
+    "label" : "Sfouggato",
+    "description" : "A delicacy that is super easy to make and can be eaten hot or cold.",
+    "url": "http://forkgasm.com/images/sfouggato.png",
+    "diet" : "Greek"
+  },
+  {
+    "label" : "Khoresht Karafs",
+    "description" : "A delicious Persian stew with beef and celery."
+  },
+  {
+    "label" : "Curried Beef Stew",
+    "description" : "Spicy, complex, and very flavorful, this Thai-inspired curry is perfect for cold winter nights.",
+    "url": "http://forkgasm.com/images/curried-beef-stew.jpg",
+    "diet" : ["Thai", "Stew", "Beef"]
   }
 ]
