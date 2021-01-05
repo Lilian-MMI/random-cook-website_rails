@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    root "list_ingredient#index"
+    get "/recipe_random", to: 'recipe_random#index'
 
     get "/list_ingredient", to: "list_ingredient#index"
 

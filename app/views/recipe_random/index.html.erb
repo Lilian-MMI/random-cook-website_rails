@@ -1,0 +1,20 @@
+<h1>Recette aléatoire</h1> 
+
+<% @recipes.each do |recipe| %>
+
+    <% if @random == recipe.id %>
+        <li>
+            <%= recipe.label %>
+        </li>
+        <li>
+            <%= recipe.description %>
+        </li>
+        <li>
+            <img src=<%= recipe.url %> height=250 />
+        </li>
+        <li>
+            <%= recipe.diet %>
+        </li>
+    <% end %>
+
+<% end %>
