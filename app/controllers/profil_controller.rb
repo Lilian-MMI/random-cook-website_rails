@@ -11,5 +11,19 @@ class ProfilController < ApplicationController
 
   def new_recipe
     @recipe = Recipe.new
+
+    @ingredients = Ingredient.all
+
+    @tab_ingredients = []
+
+    @ingredients.each do |ingredient|
+      @tab_ingredients << ingredient.name
+    end
+
+    @mesures = ["gramme (g)", "kilogramme (kg)", "litre (L)", "millilitre (mL)", "centilitre (cL)", "c. à café", "c. à soupe", "c. à thé"]
+  end
+
+  def traitement_recipe
+    @data = params[:recipe]
   end
 end
