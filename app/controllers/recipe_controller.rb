@@ -31,31 +31,38 @@ class RecipeController < ApplicationController
         
         @recipe = Recipe.new(label: @nom, description: @description, url: @url, diet: @diet, preparation_time: @preparation_time, baking_time: @baking_time, resting_time: @resting_time)
         
-        if @recipe.save
-            redirect_to @recipe and return
-        else 
-            redirect_to :new
-        end
+        @recipe.save
 
-        @recipe_ids = Recipe.where(label: @name)
+        @recipe_ids = Recipe.where(label: @nom)
                 
         @recipe_ids.each do |id|
             @recipe_id = id.id
         end
 
         (1..6).each do |n|
-            @ingredient_id = Ingredient.find_by(name: params[:"ingredient_#{n}"])
+            @ingredients = Ingredient.where(name: params[:"ingredient_#{n}"])
             
+            @ingredients.each do |ingredient|
+                @ingredient_id = ingredient.id
+            end
+            @quanint = params[:"quantity_#{n}"].to_i
+
             @recipe_ingredient = RecipeIngredient.new(recipe_id: @recipe_id,
                                 ingredient_id: @ingredient_id,
-                                quantity: params[:"quantity_#{n}"],
+                                quantity: @quanint,
                                 unity: params[:"mesure_#{n}"])
+
+            @recipe_ingredient.save
         end
 
-        if @recipe_ingredient.save
-            redirect_to @recipe_ingredient and return
-        else
-            render :new
+        (1..4).each do |n|
+            @step = Step.new(recipe_id: @recipe_id, 
+                            step_number: n, 
+                            description: params[:"etape_#{n}"])
+
+            @step.save
         end
+
+        redirect_to "/profil?user_name="+ params[:user_name].to_s
     end
 end

@@ -2,6 +2,11 @@
 
 <%= form_with model: @recipes, url: {action: "create"} do |form| %>
   <div class="field">
+    <%= form.label :label, "Créateur" %>
+    <%= form.text_field :user_name, value:params[:user_name] %>
+
+    <br>
+
     <%= form.label :label, "Nom de la recette" %>
     <%= form.text_field :nom %>
     <%= form.label :label, "Description" %>
