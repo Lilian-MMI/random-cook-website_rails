@@ -1,56 +1,110 @@
-<h1>Recettes</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackRuby</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-<ul>
+<body>
+<%= render :partial => 'layouts/header', :formats => [:html] %>
+
+<section class="home-presentation">
+  <div class="home-presentation-group-info">
+    <h2>You never know what to eat ?</h2>
+    <p>Don't panic, you've come to the right place. <br>
+      Here you can search and add your best recipes in an instant!</p>
+    <a class="btn btn-primary">Get your random recipe</a>
+  </div>
+</section>
+
+<section class="home-recipes">
+
   <% @recipes.each do |recipe| %>
-    <h2>
-      <b>Recette</b> <%= recipe.label %>
-    </h2>
-    <li>
-        <b>Description</b> <%= recipe.description %>
-    </li>
-    <% if recipe.url %>
-        <li>
-            <img src=<%= recipe.url %> height=100 />
-        </li>
-    <% else %>
-        <li>
-            Pas d'image :(
-        </li>
-    <% end %>
+    <div class="card-recipe">
 
-    <% @recipeIngredients.where(recipe_id: recipe.id).each do |recipeIngre| %>
+      <% if recipe.url %>
+        <div>
+          <img class="img-recipe" style="background-image: url(<%= recipe.url %>)"/>
+        </div>
+      <% else %>
+        <div>
+          <img class="img-recipe" style="background-image: url('https://ctt.trains.com/sitefiles/images/no-preview-available.png')"/>
+        </div>
+      <% end %>
 
-        <% @ingredients.where(id: recipeIngre.ingredient_id).each do |ingredient| %>
-
-            <li>
-                <b>Ingredients :</b> <%= ingredient.name %>
-
-
-         <% end %>
-
-            <br>
-
-            <% if recipeIngre.quantity %>
-
-                Quantity : <%= recipeIngre.quantity %> <%= recipeIngre.unity %>
-
-            <% end %>
-
-        </li>
-
-    <% end %>
-
-    <% @steps.where(recipe_id: recipe.id).each do |step| %>
-
-        <li>
-            <b>Step <%= step.step_number %> :</b>
-            <%= step.description %>
-        </li>
-
-    <% end %>
-
-    <br>
-
+      <h4><%= recipe.label %></h4>
+      <hr>
+      <div class="card-recipe-ingredient">
+        <i class="fas fa-book-open"></i>
+        <%= @recipeIngredients.where(recipe_id: recipe.id).length %> ingredients
+      </div>
+      <hr>
+      <p><%= recipe.description %></p>
+      <%= link_to "View Recipe", {controller: "recipe", action: "show", id: recipe.id}, class: 'btn btn-primary' %>
+    </div>
   <% end %>
-</ul>
+
+</section>
+
+
+<!--<ul>-->
+  <%# @recipes.each do |recipe| %>
+<!--    <h2>-->
+<!--      <b>Recette</b> <%#= recipe.label %>-->
+<!--    </h2>-->
+<!--    <li>-->
+<!--      <b>Description</b> <%#= recipe.description %>-->
+<!--    </li>-->
+    <%# if recipe.url %>
+<!--      <li>-->
+<!--        <img src=<%#= recipe.url %> height=100 />-->
+<!--      </li>-->
+    <%# else %>
+<!--      <li>-->
+<!--        Pas d'image :(-->
+<!--      </li>-->
+    <%# end %>
+
+    <%# @recipeIngredients.where(recipe_id: recipe.id).each do |recipeIngre| %>
+
+      <%# @ingredients.where(id: recipeIngre.ingredient_id).each do |ingredient| %>
+
+<!--        <li>-->
+<!--          <b>Ingredients :</b> <%#= ingredient.name %>-->
+
+
+      <%# end %>
+
+<!--      <br>-->
+
+      <%# if recipeIngre.quantity %>
+
+<!--        Quantity : <%#= recipeIngre.quantity %> <%#= recipeIngre.unity %>-->
+
+      <%# end %>
+
+<!--      </li>-->
+
+    <%# end %>
+
+    <%# @steps.where(recipe_id: recipe.id).each do |step| %>
+
+<!--      <li>-->
+<!--        <b>Step <%#= step.step_number %> :</b>-->
+        <%#= step.description %>
+<!--      </li>-->
+
+    <%# end %>
+
+<!--    <br>-->
+
+  <%# end %>
+<!--</ul>-->
+
+
+</body>
+</html>
 
