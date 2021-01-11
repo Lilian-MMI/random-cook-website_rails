@@ -83,5 +83,15 @@ class RecipeController < ApplicationController
         @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
         @ingredients = Ingredient.where(id: @recipeIngredients)
         @steps = Step.where(recipe_id: @recipe)
-      end
+    end
+
+    def random_week
+        @recipes = Recipe.all.pluck(:id).shuffle[0..6].map do |recipe_id| 
+            Recipe.find(recipe_id)
+        end
+        
+        @recipe_ingredients = RecipeIngredient.where(recipe_id: @recipes.pluck(:id))
+
+        @recipe_steps = Step.where(recipe_id: @recipes.pluck(:id))
+    end
 end
