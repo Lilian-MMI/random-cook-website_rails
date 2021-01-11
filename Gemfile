@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'pg', '>= 0.19.0.beta'
 
-#Can help for forms
+gem 'database_cleaner'
 gem 'devise'
 
 # Use Active Storage variant

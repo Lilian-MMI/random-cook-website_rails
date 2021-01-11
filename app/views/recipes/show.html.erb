@@ -1,0 +1,28 @@
+<img src=<%= @recipe.url %> height=250 />
+<h1><%= @recipe.label %></h1>
+<h2><%= @recipe.description %></h2>
+
+<b>Pour le faire, il te faut :</b>
+
+<br>
+
+<% @recipeIngredients.each do |recipeIngredient| %>
+    <p> - <%= recipeIngredient.quantity %> <%= recipeIngredient.unity %>
+
+        <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
+            <%= ingredient.name %>
+        <% end %>
+
+    </p>
+
+<% end %>
+
+<b>Pour le faire, il te faut :</b>
+
+<% @steps.each_with_index  do |step, index| %>
+    <p> Step <%= index+1 %> :
+        <%= step.description %>
+    </p>
+
+<% end %>
+

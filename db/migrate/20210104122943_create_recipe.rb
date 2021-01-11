@@ -8,10 +8,7 @@ class CreateRecipe < ActiveRecord::Migration[6.1]
       t.string:preparation_time
       t.string:baking_time
       t.string:resting_time
-
-
       t.integer:creator
-
 
       t.timestamps
     end

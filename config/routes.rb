@@ -1,6 +1,8 @@
 
 Rails.application.routes.draw do
 
+    get "/recipes/:id", to: "recipes#show"
+
     get "/list_ingredient", to: "list_ingredient#index"
  
   root "index#index"
@@ -15,6 +17,5 @@ Rails.application.routes.draw do
   get 'user/new'
   resources :users
   get 'inscription', to: 'inscription#index'
-
 
 end

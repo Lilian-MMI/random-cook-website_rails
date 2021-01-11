@@ -139,5 +139,685 @@
   {
     "recipe_id" : 3,
     "ingredient_id": 25
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 26,
+    "quantity" : 16,
+    "unity" : "oz"
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 27,
+    "quantity" : 6
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 5,
+    "quantity" : 6
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 28,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 29,
+    "quantity" : 4
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 19,
+    "quantity" : 0.25,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 4,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 5,
+    "ingredient_id": 32,
+    "quantity" : 8
+  },
+  {
+    "recipe_id" : 5,
+    "ingredient_id": 6,
+    "quantity" : 0.25,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 5,
+    "ingredient_id": 33,
+    "quantity" : 4
+  },
+  {
+    "recipe_id" : 6,
+    "ingredient_id": 34,
+    "quantity" : 3
+  },
+  {
+    "recipe_id" : 6,
+    "ingredient_id": 37
+  },
+  {
+    "recipe_id" : 6,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 6,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 36,
+    "quantity" : 2,
+    "unity" : "lbs"
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 10,
+    "quantity" : 1,
+    "unity" : "head"
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 37,
+    "quantity" : 1.25,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 38,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 39,
+    "quantity" : 2,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 40,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 41
+  },
+  {
+    "recipe_id" : 7,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 6,
+    "quantity" : 3,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 43,
+    "quantity" : 2,
+    "unity" : "medium"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 44,
+    "quantity" : 1.5,
+    "unity" : "lb"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 45,
+    "quantity" : 1,
+    "unity" : "large"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 46,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 10,
+    "quantity" : 1,
+    "unity" : "head"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 48,
+    "quantity" : 1,
+    "unity" : "7 oz jar"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 49,
+    "quantity" : 1,
+    "unity" : "28 oz tin"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 50,
+    "quantity" : 1,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 51,
+    "quantity" : 4
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 52,
+    "quantity" : 2,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 53,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 41,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 55,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 31,
+    "quantity" : 1.5,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 57,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 58,
+    "quantity" : 0.5,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 8,
+    "ingredient_id": 59,
+    "quantity" : 8
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 59,
+    "quantity" : 0.5,
+    "unity" : "head"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 10,
+    "quantity" : 0.5,
+    "unity" : "head"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 60,
+    "quantity" : 5
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 61,
+    "quantity" : 3
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 62,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 63,
+    "quantity" : 1,
+    "unity" : "good splash"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 64,
+    "quantity" : 1,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 65,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 67,
+    "quantity" : 2,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 9,
+    "ingredient_id": 68,
+    "quantity" : 3
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 69,
+    "quantity" : 10,
+    "unity" : "oz"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 70,
+    "quantity" : 7,
+    "unity" : "oz"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 71,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 10,
+    "quantity" : 10,
+    "unity" : "cloves"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 72,
+    "quantity" : 1,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 19,
+    "quantity" : 1,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 7,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 73,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 74,
+    "quantity" : 1,
+    "unity" : "pinch"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 75,
+    "quantity" : 0.2,
+    "unity" : "whole nutmeg"
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 63
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 10,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 76,
+    "quantity" : 500,
+    "unity" : "g"
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 77,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 10,
+    "quantity" : 500,
+    "unity" : "cloves"
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 78,
+    "quantity" : 150,
+    "unity" : "ml"
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 19,
+    "quantity" : 50,
+    "unity" : "ml"
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 7,
+    "quantity" : 50,
+    "unity" : "g"
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 80
+  },
+  {
+    "recipe_id" : 11,
+    "ingredient_id": 81
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 82,
+    "quantity" : 2
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 83,
+    "quantity" : 1,
+    "unity" : "bottle"
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 84,
+    "quantity" : 6,
+    "unity" : "cloves"
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 85,
+    "quantity" : 4
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 86
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 87,
+    "quantity" : 1,
+    "unity" : "large"
+  },
+  {
+    "recipe_id" : 12,
+    "ingredient_id": 88,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 89,
+    "quantity" : 2
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 90,
+    "quantity" : 1,
+    "unity" : "lbs"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 91,
+    "quantity" : 0.25,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 92,
+    "quantity" : 1,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 93,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 10,
+    "quantity" : 4,
+    "unity" : "cloves"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 94,
+    "quantity" : 2,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 95,
+    "quantity" : 2,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 13,
+    "ingredient_id": 96,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 5,
+    "quantity" : 7
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 97,
+    "quantity" : 6
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 8,
+    "quantity" : 0.5,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 9,
+    "quantity" : 0.5,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 98,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 99,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 100,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 101,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 96,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 6,
+    "quantity" : 0.5,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 30
+  },
+  {
+    "recipe_id" : 14,
+    "ingredient_id": 31
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 102,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 10,
+    "quantity" : 4,
+    "unity" : "cloves"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 8,
+    "quantity" : 1,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 103,
+    "quantity" : 1,
+    "unity" : "small bunch"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 104,
+    "quantity" : 1.5,
+    "unity" : "pound"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 105,
+    "quantity" : 1,
+    "unity" : "head"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 106,
+    "quantity" : 1,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 107,
+    "quantity" : 2,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 4,
+    "quantity" : 0.5
+  },
+  {
+    "recipe_id" : 15,
+    "ingredient_id": 108,
+    "quantity" : 2,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 109,
+    "quantity" : 2,
+    "unity" : "pounds"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 110,
+    "quantity" : 1,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 111,
+    "quantity" : 6,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 91,
+    "quantity" : 3,
+    "unity" : "tbsp"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 112,
+    "quantity" : 9,
+    "unity" : "cup"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 113,
+    "quantity" : 1
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 114,
+    "quantity" : 0.125,
+    "unity" : "tsp"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 115,
+    "quantity" : 1,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 116,
+    "quantity" : 1,
+    "unity" : "bunch"
+  },
+  {
+    "recipe_id" : 16,
+    "ingredient_id": 117,
+    "quantity" : 1,
+    "unity" : "tbsp"
   }
 ]
