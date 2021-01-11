@@ -39,6 +39,7 @@ if RecipeIngredient.count == 0
     puts "RecipeIngredients are seeded"
 end
 
+
 if Step.count == 0
     path = File.join(File.dirname(__FILE__), "./data/ListSteps.json")
     records = JSON.parse(File.read(path))

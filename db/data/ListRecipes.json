@@ -4,12 +4,16 @@
     "description" : "A low carb version of a traditional hearty Greek dish",
     "url" : "https://www.mygreekdish.com/wp-content/uploads/2013/10/Traditional-Greek-Meatball-Soup-Giouvarlakia-Youvarlakia-in-Egg-lemon-sauce-recipe-750x500.jpg",
     "diet" : "Greek"
+    "url" : "http://forkgasm.com/images/106039513_690984628417462_2727964218559966794_n.jpg",
+    "creator": 1
+
   },
   {
     "label" : "Tal’s Tahini “bread pudding",
     "description" : "A delicious baked dessert that takes 5 minutes to make!",
     "url" : "http://forkgasm.com/images/bread-pudding.png",
-    "diet" : "Dessert"
+    "diet" : "Dessert",
+    "creator": 1
   },
   {
     "label" : "Grand Marnier & Coffee Ice Cream",
@@ -88,5 +92,6 @@
     "description" : "Spicy, complex, and very flavorful, this Thai-inspired curry is perfect for cold winter nights.",
     "url": "http://forkgasm.com/images/curried-beef-stew.jpg",
     "diet" : ["Thai", "Stew", "Beef"]
+    "creator": 1
   }
 ]

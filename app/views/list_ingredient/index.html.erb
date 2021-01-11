@@ -1,0 +1,15 @@
+<body>
+    <div class = "title">
+        <h1>header</h1>
+    </div>
+    <div class = "list_ingredient">
+    <h1>Liste de course</h1>
+        <ul>
+            <% @ingredients.each do |ingredient| %>
+                <li>
+                <%= ingredient.name %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</body>

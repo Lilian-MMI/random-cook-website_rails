@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'pg', '>= 0.19.0.beta'
 
 gem 'database_cleaner'
+gem 'devise'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

@@ -1,0 +1,31 @@
+// Place all the styles related to the list_ingredient controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    background-color: rgb(248, 245, 245);
+}
+.title > h1 {
+    padding: 2rem;
+    background-color: rgb(255, 200, 91);
+    text-align: center;
+    border-radius: 10px;
+}
+p {
+    margin-left: 3rem;
+    font-size: large;
+}
+.list_ingredient {
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 3rem;  
+    width: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.list_ingredient > h1 {
+    padding-left: 1rem;
+}
+.list_ingredient > ul {
+    font-size: large;
+}

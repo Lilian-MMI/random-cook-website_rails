@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_01_04_134828) do
     t.bigint "recipe_id"
     t.bigint "ingredient_id"
     t.float "quantity"
+
     t.string "unity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -49,23 +50,25 @@ ActiveRecord::Schema.define(version: 2021_01_04_134828) do
     t.string "preparation_time"
     t.string "baking_time"
     t.string "resting_time"
+    t.integer "creator"
+
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "steps", force: :cascade do |t|
+    t.integer "recipe_id"
     t.integer "step_number"
     t.text "description"
-    t.bigint "recipe_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["recipe_id"], name: "index_steps_on_recipe_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
     t.string "password"
+    t.string "password_confirmation"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
