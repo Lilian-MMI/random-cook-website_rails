@@ -5,4 +5,11 @@ Rails.application.routes.draw do
 
   get "/recipe", to:"recipe#index"
   resources :recipe
+  
+  get 'user/index'
+  get 'user/show'
+  get 'user/new'
+  resources :users
+  get 'inscription', to: 'inscription#index'
+
 end
