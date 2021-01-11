@@ -3,18 +3,15 @@
 <% @recipes.each do |recipe| %>
 
     <% if @random == recipe.id %>
-        <li>
-            <%= recipe.label %>
-        </li>
-        <li>
-            <%= recipe.description %>
-        </li>
-        <li>
-            <img src=<%= recipe.url %> height=250 />
-        </li>
-        <li>
-            <%= recipe.diet %>
-        </li>
+        <label>Nom du plat : <%= recipe.label %></label>
+        </br>
+        <label>Description : <%= recipe.description %></label>
+        </br>
+        <label>Photo du plat : </label>
+        </br>
+        <img src=<%= recipe.url %> height=250 />
+        </br>
+        <label>Régime : <%= recipe.diet %></label>
     <% end %>
 
 <% end %>
