@@ -81,7 +81,7 @@ class RecipeController < ApplicationController
     def show
         @recipe = Recipe.find(params[:id])
         @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
-        @ingredients = Ingredient.where(id: @recipeIngredients)
+        @ingredients = Ingredient.all
         @steps = Step.where(recipe_id: @recipe)
         @favorites = Favorite.where(recipe_id: @recipe).where(user_id: 1)
     end

@@ -2,102 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-* {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-body {
-  height: 100%;
+.recipe-section {
   width: 100%;
-  overflow-x: hidden;
-}
+  height: 50rem;
+  margin-bottom: 5rem;
 
-.home-presentation {
-  height: 75vh;
-  width: 100vw;
-  background: url("https://foodhub.modeltheme.com/wp-content/uploads/2020/02/foodhub-slider-main-food-v4.jpg?id=20741") center;
-  display: flex;
-  flex-direction: column;
-
-  .home-presentation-group-info {
-    margin: auto auto auto 10rem;
-  }
-
-  h2 {
-    margin-top: 0;
-    color: white;
-  }
-
-  p {
-    color: #c6c6c6;
-  }
-
-  .btn-primary {
-    margin-top: 2rem;
-    background: #5765c1;
-    border: none;
-    padding: 1rem 1.5rem;
-  }
-}
-
-.home-recipes {
-  height: 100%;
-  width: 100%;
-  margin: 2rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .card-recipe {
-    width: 20%;
+  .recipe-image {
+    width: 50%;
     height: 50rem;
-    margin: 3rem 1.5rem;
-    box-shadow: 1px 3px 5px #e6e6e6;
-    border-radius: 6px;
+    margin: 2rem 25%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    div {
-      height: 50%;
-      width: 100%;
+    a {
+      margin-left: auto;
+      margin-right: auto;
+      align-self: flex-end;
+      font-size: 48px;
+      margin-bottom: 1rem;
+
+      &:hover, :focus {
+        text-decoration: none !important;
+      }
+
+      i {
+        color: #5c6ac4;
+        background-color: white;
+        height: 75px;
+        border-radius: 100%;
+        width: 75px;
+        display: flex;
+      }
+
+      i::before {
+        margin: auto;
+      }
     }
+  }
 
-    div > .img-recipe {
-      height: 100%;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+  .recipe-info {
+    width: 50%;
+    margin: 2rem 25%;
 
-    h4 {
-      text-align: center;
-      height: 3rem;
-    }
-
-    .fa-book-open:before {
-      color: #5765c1;
+    h2 {
       font-size: 18px;
     }
 
-    .card-recipe-ingredient {
-      margin-left: 1rem;
-      height: auto;
+    .recipe-ingredient-group {
+      display: flex;
+      flex-wrap: wrap;
+
+      .recipe-ingredient {
+        box-shadow: 1px 1px 1px 1px #bfbfbf;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 2rem;
+      }
     }
 
-    p {
-      margin-left: 1rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2; /* number of lines to show */
-      -webkit-box-orient: vertical;
-      height: 50px;
-    }
-
-    a {
-      width: 90%;
-      margin: auto 5%;
-      background-color: #5765c1;
+    .recipe-step-group {
+      padding-bottom: 10rem;
     }
   }
 }
