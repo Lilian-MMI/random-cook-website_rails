@@ -1,0 +1,22 @@
+[
+  {
+    "label" : "Giouvarlakia",
+    "description" : "A low carb version of a traditional hearty Greek dish",
+    "url" : "http://forkgasm.com/images/106039513_690984628417462_2727964218559966794_n.jpg",
+    "diet" : "Greek",
+    "creator": 1
+  },
+  {
+    "label" : "Tal’s Tahini “bread pudding",
+    "description" : "A delicious baked dessert that takes 5 minutes to make!",
+    "url" : "http://forkgasm.com/images/bread-pudding.png",
+    "diet" : "Dessert",
+    "creator": 1
+  },
+  {
+    "label" : "Grand Marnier & Coffee Ice Cream",
+    "description" : "Easy and decadent!",
+    "diet" : ["Dessert", "Ice cream"],
+    "creator": 1
+  }
+]
