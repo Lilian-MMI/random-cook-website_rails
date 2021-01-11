@@ -1,3 +1,16 @@
+<% if cookies.permanent.signed[:remember_token] %>
+    <%= link_to "Profil", "../profil?id="+cookies.permanent.signed[:remember_token][0].to_s %>
+    <%= link_to "Random Week", "../recipe_week"  %>
+    <%= link_to "Home", "../home"%>
+
+    <%= link_to "Déconnexion", "../sessions/destroy"  %>
+<%else%>
+     <%= link_to "Connexion", "../sessions/new" %> <br> 
+     <%= link_to "Inscription", "../inscription" %>
+<%end%>
+
+<br><br>
+
 <img src=<%= @recipe.url %> height=250 />
 <h1><%= @recipe.label %></h1>
 <h2><%= @recipe.description %></h2>

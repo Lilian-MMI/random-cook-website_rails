@@ -1,9 +1,7 @@
 <h1><%= @user.username%></h1>
-
+<%= render "layouts/header" %>
 <% if cookies.permanent.signed[:remember_token][0] == params[:id].to_i %>
   <%= link_to "Nouvelle Recette", "/recipe?id="+params[:id] %>
-
-  <%= link_to "Déconnexion", "sessions/destroy"  %>
   <ul>
     <% @favorites.each do |fav| %>
       <li>
@@ -12,7 +10,6 @@
     <% end %>
   </ul>
 <%end%>
-<%= link_to "Home", "/home"  %>
 <ul>
   <% @recipes.each do |recipe| %>
     <li>
