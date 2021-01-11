@@ -83,5 +83,24 @@ class RecipeController < ApplicationController
         @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
         @ingredients = Ingredient.where(id: @recipeIngredients)
         @steps = Step.where(recipe_id: @recipe)
-      end
+        @favorites = Favorite.where(recipe_id: @recipe).where(user_id: 1)
+    end
+
+    def favorite
+        @recipe = Recipe.find(params[:id])
+        @user = User.find(1)
+
+        type = params[:type]
+        if type == "favorite"
+            @favorite = Favorite.new
+            @favorite.recipe_id = @recipe.id
+            @favorite.user_id = @user.id
+            @favorite.save
+            redirect_back fallback_location: root_path
+
+        elsif type == "unfavorite"
+            Favorite.where(recipe_id: @recipe).where(user_id: 1).delete_all
+            redirect_back fallback_location: root_path
+        end
+    end
 end

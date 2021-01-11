@@ -2,6 +2,15 @@
 <h1><%= @recipe.label %></h1>
 <h2><%= @recipe.description %></h2>
 
+<% if @favorites.length === 0 %>
+  <%= link_to "Ajoutez aux favoris", favorite_recipe_path(@recipe, type: "favorite"), method: :put %>
+<% else %>
+  <%= link_to "Supprimez des favoris", favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete %>
+<% end %>
+
+<br>
+<br>
+
 <b>Pour le faire, il te faut :</b>
 
 <br>
