@@ -1,15 +1,17 @@
 
 Rails.application.routes.draw do
 
-    get "/recipes/:id", to: "recipes#show"
+  root "home#index"
 
-    get "/list_ingredient", to: "list_ingredient#index"
- 
-  root "index#index"
+  get "/profil", to:"index#index"
 
+  get "/home", to:"home#index"
   resources :profil
 
   get "/recipe", to:"recipe#index"
+  get "/recipe/:id", to: "recipe#show"
+
+  get "/recipe_random", to: "recipe_random#index"
   resources :recipe
   
   get 'user/index'

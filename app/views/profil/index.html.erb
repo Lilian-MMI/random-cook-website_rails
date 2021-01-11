@@ -13,7 +13,7 @@
 <ul>
   <% @recipes.each do |recipe| %>
     <li>
-        <%= recipe.id %>
+    <%= link_to recipe.label, "/recipe/"+recipe.id.to_s %>
     </li>
   <% end %>
 </ul>

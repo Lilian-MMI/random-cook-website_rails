@@ -77,4 +77,11 @@ class RecipeController < ApplicationController
 
         redirect_to "/profil?user_name="+ params[:user_name].to_s
     end
+
+    def show
+        @recipe = Recipe.find(params[:id])
+        @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
+        @ingredients = Ingredient.where(id: @recipeIngredients)
+        @steps = Step.where(recipe_id: @recipe)
+      end
 end

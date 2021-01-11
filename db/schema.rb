@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 2021_01_04_134828) do
     t.bigint "recipe_id"
     t.bigint "ingredient_id"
     t.float "quantity"
-
     t.string "unity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -51,7 +50,6 @@ ActiveRecord::Schema.define(version: 2021_01_04_134828) do
     t.string "baking_time"
     t.string "resting_time"
     t.integer "creator"
-
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
