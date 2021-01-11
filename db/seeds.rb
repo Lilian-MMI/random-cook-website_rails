@@ -49,3 +49,12 @@ if Step.count == 0
 end
 
 
+if User.count == 0
+    path = File.join(File.dirname(__FILE__), "./data/ListUser.json")
+    records = JSON.parse(File.read(path))
+    records.each do |record|
+      User.create!(record)
+    end
+    puts "Users are seeded"
+end
+
