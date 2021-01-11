@@ -7,5 +7,7 @@ class ProfilController < ApplicationController
     @user = User.find_by(username: @user_name)
 
     @favorites = Favorite.where(user: @user)
+
+    @recipes = Recipe.where(creator: @user.id)
   end
 end

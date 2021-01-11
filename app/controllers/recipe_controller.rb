@@ -29,8 +29,20 @@ class RecipeController < ApplicationController
         @baking_time= params[:temps_cuisson_h] + "h" + params[:temps_cuisson_h]
         @resting_time= params[:temps_repos_h] + "h" + params[:temps_repos_h]
         
-        @recipe = Recipe.new(label: @nom, description: @description, url: @url, diet: @diet, preparation_time: @preparation_time, baking_time: @baking_time, resting_time: @resting_time)
+        @user = User.where(username: params[:user_name])
+
+        @user.each do |us|
+            @user_id = us.id
+        end
         
+        @recipe = Recipe.new(label: @nom, 
+                            description: @description, 
+                            url: @url, 
+                            diet: @diet, 
+                            preparation_time: @preparation_time, 
+                            baking_time: @baking_time, 
+                            resting_time: @resting_time,
+                            creator: @user_id)
         @recipe.save
 
         @recipe_ids = Recipe.where(label: @nom)
