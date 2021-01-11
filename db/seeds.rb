@@ -40,4 +40,3 @@ if RecipeIngredient.count == 0
 end
 
 
-

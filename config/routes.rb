@@ -1,4 +1,8 @@
-Rails.application.routes.draw do    
+
+Rails.application.routes.draw do
+
+    get "/list_ingredient", to: "list_ingredient#index"
+ 
   root "index#index"
 
   resources :profil
@@ -11,5 +15,6 @@ Rails.application.routes.draw do
   get 'user/new'
   resources :users
   get 'inscription', to: 'inscription#index'
+
 
 end
