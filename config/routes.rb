@@ -1,9 +1,8 @@
 
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-
   root "home#index"
+
+  get '/admin', to: "index#index"
 
   get "/profil", to:"profil#index"
 
@@ -26,7 +25,8 @@ Rails.application.routes.draw do
   get 'inscription', to: 'inscription#index'
   get 'sessions/create'
   get 'sessions/error'
-  get 'sessions/destroy'
+  get 'sessions/destroy' 
+  get 'sessions/new'
 
 
 end

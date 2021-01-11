@@ -1,4 +1,11 @@
 <h1>Recettes</h1>
+<% if cookies.permanent.signed[:remember_token] %>
+<%= link_to "Profil", "/profil?id="+cookies.permanent.signed[:remember_token][0].to_s %>
+<%= link_to "Déconnexion", "sessions/destroy"  %>
+<%= link_to "Random Week", "recipe_week"  %>
+<%else%>
+<%= link_to "Connexion", "sessions/new"  %> <br> <%= link_to "Inscription", "inscription"  %>
+<%end%>
 
 <ul>
   <% @recipes.each do |recipe| %>

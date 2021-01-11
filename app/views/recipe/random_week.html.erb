@@ -1,5 +1,8 @@
 <h1>Random week</h1>
 
+<% if cookies.permanent.signed[:remember_token] %>
+  <%= link_to "Home", "/home" %>
+<%end %>
 <table border="1px">
     <tr><td colspan="7" style="text-align:center; font-size: 20px;">Nom</td></tr>
 
@@ -15,14 +18,14 @@
     <% @recipes.each do |recipe| %>
         <td>
         <% @recipe_ingredients.each do |recipe_ingredient| %>
-                <% if recipe_ingredient.recipe_id == recipe.id %> 
-                    <li>
-                        <%= recipe_ingredient.ingredient.name %>
-                        <%= recipe_ingredient.quantity %>
-                        <%= recipe_ingredient.unity %>
-                    </li>
-                <% end %>
+            <% if recipe_ingredient.recipe_id == recipe.id %> 
+                <li>
+                    <%= recipe_ingredient.ingredient.name %>
+                    <%= recipe_ingredient.quantity %>
+                    <%= recipe_ingredient.unity %>
+                </li>
             <% end %>
+        <% end %>
         </td>
     <% end %>	
     </tr>
