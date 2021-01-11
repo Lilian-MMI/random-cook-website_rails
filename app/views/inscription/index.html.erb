@@ -1,0 +1,33 @@
+<h1>Inscription</h1>
+
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, required: true %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.password_field :password_confirmation, required: true%>
+  </div>
+  <div class="actions">
+    <%= f.submit "Inscription" %>
+  </div>
+<% end %>
+
+<% if params[:error] == "1" %>
+<div class="message_error">
+<p class="message">Votre mot de passe est différent de la confirmation</p>
+</div>
+<% elsif params[:error].nil? %>
+<div class="message_error">
+</div>
+<% end %>
+
