@@ -1,6 +1,10 @@
 
 <section class="recipe-create">
   <h1>Nouvelle Recette</h1>
+<%= form_with model: @recipes, url: {action: "create"} do |form| %>
+  <div class="field">
+    <%= form.label :label, "Créateur" %>
+    <%= form.text_field :user_name, value:@user.username %>
 
   <%= form_with model: @recipes, url: {action: "create"} do |form| %>
     <div class="field">
