@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "/recipe", to:"recipe#index"
   get "/recipe/:id", to: "recipe#show"
   get "/recipe_week", to: "recipe#random_week"
+  get "/recipe/delete/:id", to: "recipe#delete"
 
   get "/recipe_random", to: "recipe_random#index"
   resources :recipe
