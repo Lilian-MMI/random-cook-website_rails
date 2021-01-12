@@ -46,65 +46,9 @@
       <%= link_to "View Recipe", {controller: "recipe", action: "show", id: recipe.id}, class: 'btn btn-primary' %>
     </div>
   <% end %>
-
+  
 </section>
-
-
-<!--<ul>-->
-  <%# @recipes.each do |recipe| %>
-<!--    <h2>-->
-<!--      <b>Recette</b> <%#= recipe.label %>-->
-<!--    </h2>-->
-<!--    <li>-->
-<!--      <b>Description</b> <%#= recipe.description %>-->
-<!--    </li>-->
-    <%# if recipe.url %>
-<!--      <li>-->
-<!--        <img src=<%#= recipe.url %> height=100 />-->
-<!--      </li>-->
-    <%# else %>
-<!--      <li>-->
-<!--        Pas d'image :(-->
-<!--      </li>-->
-    <%# end %>
-
-    <%# @recipeIngredients.where(recipe_id: recipe.id).each do |recipeIngre| %>
-
-      <%# @ingredients.where(id: recipeIngre.ingredient_id).each do |ingredient| %>
-
-<!--        <li>-->
-<!--          <b>Ingredients :</b> <%#= ingredient.name %>-->
-
-
-      <%# end %>
-
-<!--      <br>-->
-
-      <%# if recipeIngre.quantity %>
-
-<!--        Quantity : <%#= recipeIngre.quantity %> <%#= recipeIngre.unity %>-->
-
-      <%# end %>
-
-<!--      </li>-->
-
-    <%# end %>
-
-    <%# @steps.where(recipe_id: recipe.id).each do |step| %>
-
-<!--      <li>-->
-<!--        <b>Step <%#= step.step_number %> :</b>-->
-        <%#= step.description %>
-<!--      </li>-->
-
-    <%# end %>
-
-<!--    <br>-->
-
-  <%# end %>
-<!--</ul>-->
-
-
+  
 </body>
 </html>
 

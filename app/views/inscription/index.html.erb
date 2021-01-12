@@ -22,6 +22,8 @@
   </div>
 <% end %>
 
+<p>Déjà inscrit ? <%= link_to "Se connecter !", "/sessions/new"  %></p>
+
 <% if params[:error] == "1" %>
 <div class="message_error">
 <p class="message">Votre mot de passe est différent de la confirmation</p>

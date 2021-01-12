@@ -8,6 +8,10 @@ class RecipeController < ApplicationController
           @tab_ingredients << ingredient.name
         end
 
+        @id = cookies.permanent.signed[:remember_token][0]
+    
+        @user = User.find(@id)
+
         @mesures = ["g", "kg", "L", "mL", "cL", "c. à café", "c. à soupe", "c. à thé"]
         
         @diets = ["Végétarien", "Végétalien", "Sans glutten", "Fléxitarien", "Végan", "Viande", "Poisson"]
@@ -21,6 +25,7 @@ class RecipeController < ApplicationController
     
 
     def create
+        @id = cookies.permanent.signed[:remember_token][0]
         @nom = params[:nom]
         @description = params[:description]
         @diet = params[:regime]
@@ -28,13 +33,7 @@ class RecipeController < ApplicationController
         @preparation_time= params[:temps_prepa_h] + "h" + params[:temps_prepa_m]
         @baking_time= params[:temps_cuisson_h] + "h" + params[:temps_cuisson_h]
         @resting_time= params[:temps_repos_h] + "h" + params[:temps_repos_h]
-        
-        @user = User.where(username: params[:user_name])
-
-        @user.each do |us|
-            @user_id = us.id
-        end
-        
+               
         @recipe = Recipe.new(label: @nom, 
                             description: @description, 
                             url: @url, 
@@ -42,7 +41,7 @@ class RecipeController < ApplicationController
                             preparation_time: @preparation_time, 
                             baking_time: @baking_time, 
                             resting_time: @resting_time,
-                            creator: @user_id)
+                            creator: @id)
         @recipe.save
 
         @recipe_ids = Recipe.where(label: @nom)
@@ -75,7 +74,7 @@ class RecipeController < ApplicationController
             @step.save
         end
 
-        redirect_to "/profil?user_name="+ params[:user_name].to_s
+        redirect_to "/profil?id="+@id.to_s
     end
 
     def show
@@ -102,5 +101,15 @@ class RecipeController < ApplicationController
             Favorite.where(recipe_id: @recipe).where(user_id: 1).delete_all
             redirect_back fallback_location: root_path
         end
+    end
+
+    def random_week
+        @recipes = Recipe.all.pluck(:id).shuffle[0..6].map do |recipe_id| 
+            Recipe.find(recipe_id)
+        end
+        
+        @recipe_ingredients = RecipeIngredient.where(recipe_id: @recipes.pluck(:id))
+
+        @recipe_steps = Step.where(recipe_id: @recipes.pluck(:id))
     end
 end

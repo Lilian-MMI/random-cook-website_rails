@@ -3,7 +3,7 @@
 <ul>
   <% @profil.each do |profil| %>
     <li>
-      <a href="/profil?user_name=<%= profil.username %>">
+      <a href="/profil?id=<%= profil.username %>">
         <%= profil.username %>
       </a>
     </li>
@@ -15,3 +15,6 @@
 
 
 <%= link_to "Recette random", "/recipe_random" %>
+
+
+<%= link_to "Recette random week", "/recipe_week" %>
