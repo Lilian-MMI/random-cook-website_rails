@@ -12,17 +12,17 @@
 <%= render :partial => 'layouts/header', :formats => [:html] %>
 
   <section class="recipe-section">
-      <div>
-        <img class="img-recipe-show" src="<%= @recipe.url %>"/>
-      </div>
+      <div class="recipe-image" style="background-image: url(<%= @recipe.url %>)">
 
-      <% if @favorites.length === 0 %>
-        <%= link_to favorite_recipe_path(@recipe, type: "favorite"), method: :put do %>
-          <i class="far fa-heart"></i>
-        <% end %>
-      <% else %>
-        <%= link_to favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete do %>
-          <i class='fas fa-heart'></i>
+      <% if cookies.permanent.signed[:remember_token] %>
+        <% if @favorites %>
+          <%= link_to favorite_recipe_path(@recipe, type: "favorite"), method: :put do %>
+            <i class="far fa-heart"></i>
+          <% end %>
+        <% else %>
+          <%= link_to favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete do %>
+            <i class='fas fa-heart'></i>
+          <% end %>
         <% end %>
       <% end %>
 

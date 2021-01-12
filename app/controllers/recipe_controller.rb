@@ -82,7 +82,9 @@ class RecipeController < ApplicationController
         @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
         @ingredients = Ingredient.all
         @steps = Step.where(recipe_id: @recipe)
-        @favorites = Favorite.where(recipe_id: @recipe).where(user_id: cookies.permanent.signed[:remember_token][0])
+        if cookies.permanent.signed[:remember_token]
+            @favorites = Favorite.where(recipe_id: @recipe).where(user_id: cookies.permanent.signed[:remember_token][0])
+        end
     end
 
     def favorite
