@@ -1,31 +1,63 @@
-<h1>Recette aléatoire</h1> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackRuby</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'recipe', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-<%= link_to "Recette random", "/recipe_random" %>
-</br>
-<img src=<%= @rand_recipes[3] %> height=250 />
-<h1><%= @rand_recipes[1] %></h1>
-<h2><%= @rand_recipes[2] %></h2>
+<body>
 
-<b>Pour le faire, il te faut :</b>
+<%= render :partial => 'layouts/header', :formats => [:html] %>
 
-<br>
+  <section class="recipe-section">
 
-<% @recipeIngredients.each do |recipeIngredient| %>
-    <p> - <%= recipeIngredient.quantity %> <%= recipeIngredient.unity %>
+  <a href="./recipe_random">Nouvelle recette</a>
 
-        <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
-            <%= ingredient.name %>
-        <% end %>
+    <% if @rand_recipes[3] %>
+      <div class="recipe-image" style="background-image: url(<%= @rand_recipes[3] %>)">
+    <% else %>
+      <div class="recipe-image" style="background-image: url('https://ctt.trains.com/sitefiles/images/no-preview-available.png')">
+    <% end %>
 
-    </p>
+      </div>
 
-<% end %>
+      <div class="recipe-info">
+        <h1><%= @rand_recipes[1] %></h1>
+        <h2><%= @rand_recipes[2] %></h2>
+        <hr>
 
-<b>Pour le faire, il te faut :</b>
+        <p><b>Ingredients :</b></p>
 
-<% @steps.each_with_index  do |step, index| %>
-    <p> Step <%= index+1 %> :
-        <%= step.description %>
-    </p>
-<% end %>
+        <div class="recipe-ingredient-group">
+          <% @recipeIngredients.each do |recipeIngredient| %>
+            <p class="recipe-ingredient"> <%= recipeIngredient.quantity.to_s.sub(/\.?0+$/, '') %> <%= recipeIngredient.unity %>
 
+              <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
+                <%= ingredient.name %>
+              <% end %>
+            </p>
+
+          <% end %>
+        </div>
+        <hr>
+
+        <p><b>Steps :</b></p>
+
+        <div class="recipe-step-group">
+          <% @steps.each_with_index  do |step, index| %>
+            <p> <%= index+1 %> :
+              <%= step.description %>
+            </p>
+
+          <% end %>
+        </div>
+
+      </div>
+
+  </section>
+
+</body>
+</html>
