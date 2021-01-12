@@ -1,0 +1,22 @@
+[
+  {
+    "username" : "mickey",
+    "password": "mdp-123",
+    "email" : "mickey@gmail.com"
+  },
+  {
+    "username" : "donald",
+    "password": "mdp-123",
+    "email" : "donald@gmail.com"
+  },
+  {
+    "username" : "picsou",
+    "password": "mdp-123",
+    "email" : "picsou@gmail.com"
+  },
+  {
+    "username" : "dingo",
+    "password": "mdp-123",
+    "email" : "dingo@gmail.com"
+  }
+]
