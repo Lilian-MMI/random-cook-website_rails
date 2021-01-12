@@ -18,5 +18,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    sign_out
+    redirect_to :controller => 'users', :action => 'index'
   end
 end

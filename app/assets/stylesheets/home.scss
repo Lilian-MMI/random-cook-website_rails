@@ -102,3 +102,25 @@
       }
     }
   }
+    .card-recipe-ingredient {
+      margin-left: 1rem;
+      height: auto;
+    }
+
+    p {
+      margin-left: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+      -webkit-box-orient: vertical;
+      height: 50px;
+    }
+
+    a {
+      width: 90%;
+      margin: auto 5%;
+      background-color: #5765c1;
+    }
+  }
+}
