@@ -16,15 +16,14 @@
 
       <% if cookies.permanent.signed[:remember_token] %>
         <% if @favorites %>
-          <%= link_to favorite_recipe_path(@recipe, type: "favorite"), method: :put do %>
+          <%= link_to favorite_recipe_path(@recipe, type: "favorite", id: @recipe.id), method: :put do %>
             <i class="far fa-heart"></i>
           <% end %>
         <% else %>
-          <%= link_to favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete do %>
+          <%= link_to favorite_recipe_path(@recipe, type: "unfavorite", id: @recipe.id), method: :delete do %>
             <i class='fas fa-heart'></i>
           <% end %>
         <% end %>
-      <% end %>
     <% else %>
       <%= link_to favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete do %>
         <i class='fas fa-heart'></i>

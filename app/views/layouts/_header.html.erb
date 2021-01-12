@@ -179,7 +179,7 @@
       <a class="navbar-brand" href="/">Recip<b>Andom</b></a>
     </div>
 
-    <% if !cookies.permanent.signed[:remember_token] %>
+    <% if signed_in? %>
 
       <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
