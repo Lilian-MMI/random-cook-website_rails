@@ -2,12 +2,12 @@ class ProfilController < ApplicationController
   def index
     @profils = User.all
 
-    @user_name = params[:user_name]
+    @id = params[:id]
     
-    @user = User.find_by(username: @user_name)
+    @user = User.find(@id)
 
     @favorites = Favorite.where(user: @user)
 
-    @recipes = Recipe.where(creator: @user.id)
+    @recipes = Recipe.where(creator: @id)
   end
 end
