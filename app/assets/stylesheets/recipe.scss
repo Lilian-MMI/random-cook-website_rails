@@ -7,8 +7,6 @@
   height: 50rem;
   margin-bottom: 5rem;
 
-  
-
   .recipe-image {
     width: 50%;
     height: 50rem;
@@ -70,3 +68,33 @@
   }
 }
 
+// Place all the styles related to the Recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: white;
+  text-align: left;
+}
+
+.title {
+  color : #5c6ac4;
+  text-align: center;
+  margin-top: 1%;
+}
+input[type="submit"]{
+  cursor:pointer;
+  background-color: #5c6ac4;
+  color: white;
+  margin-top: 2rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+.recipe-create {
+  text-align: center;
+}
+
+.action-save {
+  text-align: center;
+}
