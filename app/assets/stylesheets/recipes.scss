@@ -1,3 +1,27 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    background-color: white;
+}
+
+h1 {
+    color : #5c6ac4;
+}
+input[type="submit"]{
+    cursor:pointer;
+    background-color: #5c6ac4;
+    color: white;
+    margin-top: 2rem;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+.recipe-create {
+    text-align: center;
+}
+
+.field {
+    text-align: center;
+}
