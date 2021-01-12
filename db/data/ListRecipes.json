@@ -4,7 +4,7 @@
     "description" : "A low carb version of a traditional hearty Greek dish",
     "url" : "https://www.mygreekdish.com/wp-content/uploads/2013/10/Traditional-Greek-Meatball-Soup-Giouvarlakia-Youvarlakia-in-Egg-lemon-sauce-recipe-750x500.jpg",
     "diet" : "Greek",
-    "creator": 1
+    "creator": 4
 
   },
   {
@@ -35,7 +35,8 @@
   {
     "label" : "Papoutsakia",
     "description" : "A traditional Greek dish that tastes very similar to moussaka, but is much quicker to cook. Fun fact: Papoutsakia in Greek means \\\"little shoes\\\" and a portion usually has two. However, when cooking with large American eggplants, you'll likely find that one per portion is enough.",
-    "diet" : "Greek"
+    "diet" : "Greek",
+    "url" : "https://ctt.trains.com/sitefiles/images/no-preview-available.png"
   },
   {
     "label" : "Gambas al Ajillo",
@@ -46,12 +47,14 @@
   {
     "label" : "Shakshuka",
     "description" : "Breakfast of champions (one of them)",
-    "diet" : ["Arabic", "Israeli", "Breakfast"]
+    "diet" : ["Arabic", "Israeli", "Breakfast"],
+    "url" : "https://ctt.trains.com/sitefiles/images/no-preview-available.png"
   },
   {
     "label" : "Real Caesar Salad",
     "description" : "Based on the original 1920's Italian-American table-side recipe",
-    "diet" : ["Italian-American", "Salad"]
+    "diet" : ["Italian-American", "Salad"],
+    "url" : "https://ctt.trains.com/sitefiles/images/no-preview-available.png"
   },
   {
     "label" : "Garlic mushrooms a la crème with lardons and green pepper",
@@ -84,13 +87,14 @@
   },
   {
     "label" : "Khoresht Karafs",
-    "description" : "A delicious Persian stew with beef and celery."
+    "description" : "A delicious Persian stew with beef and celery.",
+    "url" : "https://ctt.trains.com/sitefiles/images/no-preview-available.png"
   },
   {
     "label" : "Curried Beef Stew",
     "description" : "Spicy, complex, and very flavorful, this Thai-inspired curry is perfect for cold winter nights.",
     "url": "http://forkgasm.com/images/curried-beef-stew.jpg",
     "diet" : ["Thai", "Stew", "Beef"],
-    "creator": 1
+    "creator": 2
   }
 ]

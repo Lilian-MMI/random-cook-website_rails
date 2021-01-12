@@ -82,12 +82,12 @@ class RecipeController < ApplicationController
         @recipeIngredients = RecipeIngredient.where(recipe_id: @recipe)
         @ingredients = Ingredient.all
         @steps = Step.where(recipe_id: @recipe)
-        @favorites = Favorite.where(recipe_id: @recipe).where(user_id: 1)
+        @favorites = Favorite.where(recipe_id: @recipe).where(user_id: cookies.permanent.signed[:remember_token][0])
     end
 
     def favorite
         @recipe = Recipe.find(params[:id])
-        @user = User.find(1)
+        @user = User.find(cookies.permanent.signed[:remember_token][0])
 
         type = params[:type]
         if type == "favorite"
@@ -98,7 +98,7 @@ class RecipeController < ApplicationController
             redirect_back fallback_location: root_path
 
         elsif type == "unfavorite"
-            Favorite.where(recipe_id: @recipe).where(user_id: 1).delete_all
+            Favorite.where(recipe_id: @recipe).where(user_id: cookies.permanent.signed[:remember_token][0]).delete_all
             redirect_back fallback_location: root_path
         end
     end
@@ -111,7 +111,7 @@ class RecipeController < ApplicationController
         @ingredients = Ingredient.all
         @steps = Step.where(recipe_id: @rand_recipes[0])
         @favorites = Favorite.where(recipe_id: @rand_recipes[0]).where(user_id: 1)
-
+    end
 
     def delete
         @id = cookies.permanent.signed[:remember_token][0]

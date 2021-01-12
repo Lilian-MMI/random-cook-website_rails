@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>BackRuby</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'recipe', media: 'all', 'data-turbolinks-track': 'reload' %>
-</head>
-
-<body>
-
 <%= render :partial => 'layouts/header', :formats => [:html] %>
 
   <section class="recipe-section">
-
-  <a href="./recipe_random">Nouvelle recette</a>
 
     <% if @rand_recipes[3] %>
       <div class="recipe-image" style="background-image: url(<%= @rand_recipes[3] %>)">
     <% else %>
       <div class="recipe-image" style="background-image: url('https://ctt.trains.com/sitefiles/images/no-preview-available.png')">
     <% end %>
+
+      <% if @favorites.length === 0 %>
+        <%= link_to favorite_recipe_path(@recipe, type: "favorite", id: @rand_recipes[0]), method: :put do %>
+          <i class="far fa-heart"></i>
+        <% end %>
+      <% else %>
+        <%= link_to favorite_recipe_path(@recipe, type: "unfavorite", id: @rand_recipes[0]), method: :delete do %>
+          <i class='fas fa-heart'></i>
+        <% end %>
+      <% end %>
 
       </div>
 

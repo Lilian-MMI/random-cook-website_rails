@@ -4,5 +4,6 @@ class HomeController < ApplicationController
       @recipeIngredients = RecipeIngredient.all
       @ingredients = Ingredient.all
       @steps = Step.all
+      @creators = User.all
   end
 end

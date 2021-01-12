@@ -1,98 +1,88 @@
-
-<h1>Nouvelle Recette</h1>
 <%= render "layouts/header" %>
 <br><br>
 
-<section class="recipe-create">
-  <h1>Nouvelle Recette</h1>
 <%= form_with model: @recipes, url: {action: "create"} do |form| %>
   <div class="field">
     <%= form.label :label, "Créateur" %>
     <%= form.text_field :user_name, value:@user.username %>
 
-  <%= form_with model: @recipes, url: {action: "create"} do |form| %>
-    <div class="field">
-      <%= form.label :label, "Créateur" %>
-      <%= form.text_field :user_name, value:params[:user_name] %>
+    <br>
+
+    <%= form.label :label, "Nom de la recette" %>
+    <%= form.text_field :nom %>
+    <%= form.label :label, "Description" %>
+    <%= form.text_area :description, size: "50x5" %>
+  </div>
+
+  <br>
+  
+  <div class="field">
+    <%= form.label :label, "Temps de préparation" %>
+    <%= form.number_field :temps_prepa_h, step: 1 %>
+    <%= form.label :label, "h" %>
+    <%= form.number_field :temps_prepa_m, step: 5 %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :label, "Temps de cuisson" %>
+    <%= form.number_field :temps_cuisson_h, step: 1 %>
+    <%= form.label :label, "h" %>
+    <%= form.number_field :temps_cuisson_m, step: 5 %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :label, "Temps de repos" %>
+    <%= form.number_field :temps_repos_h, step: 1 %>
+    <%= form.label :label, "h" %>
+    <%= form.number_field :temps_repos_m, step: 5 %>
+  </div>
+
+  <br><br>
+
+  <h1>Catégorie</h1>
+
+  <div class="field">
+    <% (0..6).each do |n| %>
+      <%= form.radio_button :regime, @diets[n] %>
+      <%= form.label :label, @diets[n] %>
+    <% end %>
+  </div>
+
+  <br><br>
+
+  <h1>Ingrédient</h1>
+
+  <div class="field">
+    <% (1..6).each do |n| %>
+      <%= form.label :label, "Quantité" %>
+      <%= form.number_field :"quantity_#{n}", step: 0.1 %>
+
+      <%= form.label :label, "Mesure" %>
+      <%= form.select :"mesure_#{n}", @mesures %>
+
+      <%= form.label :label, "Ingrédient" %>
+      <%= form.select :"ingredient_#{n}", @tab_ingredients %>
 
       <br>
+    <% end %>
+  </div>
 
-      <%= form.label :label, "Nom de la recette" %>
-      <%= form.text_field :nom %>
-      <%= form.label :label, "Description" %>
-      <%= form.text_area :description, size: "50x5" %>
-    </div>
+  <h1>Etapes</h1>
 
-    <br>
-    
-    <div class="field">
-      <%= form.label :label, "Temps de préparation" %>
-      <%= form.number_field :temps_prepa_h, step: 1 %>
-      <%= form.label :label, "h" %>
-      <%= form.number_field :temps_prepa_m, step: 5 %>
-    </div>
+  <div class="field">
+    <% (1..4).each do |n| %>
+      <%= form.label :label, "Etape " + n.to_s %>
+      <br>
+      <%= form.text_area :"etape_#{n}", size: "50x5" %>
+      <br>
+    <% end %>
+  </div>
 
-    <br>
-
-    <div class="field">
-      <%= form.label :label, "Temps de cuisson" %>
-      <%= form.number_field :temps_cuisson_h, step: 1 %>
-      <%= form.label :label, "h" %>
-      <%= form.number_field :temps_cuisson_m, step: 5 %>
-    </div>
-
-    <br>
-
-    <div class="field">
-      <%= form.label :label, "Temps de repos" %>
-      <%= form.number_field :temps_repos_h, step: 1 %>
-      <%= form.label :label, "h" %>
-      <%= form.number_field :temps_repos_m, step: 5 %>
-    </div>
-
-    <br><br>
-
-    <h1>Catégorie</h1>
-
-    <div class="field">
-      <% (0..6).each do |n| %>
-        <%= form.radio_button :regime, @diets[n] %>
-        <%= form.label :label, @diets[n] %>
-      <% end %>
-    </div>
-
-    <br><br>
-
-    <h1>Ingrédient</h1>
-
-    <div class="field">
-      <% (1..6).each do |n| %>
-        <%= form.label :label, "Quantité" %>
-        <%= form.number_field :"quantity_#{n}", step: 0.1 %>
-
-        <%= form.label :label, "Mesure" %>
-        <%= form.select :"mesure_#{n}", @mesures %>
-
-        <%= form.label :label, "Ingrédient" %>
-        <%= form.select :"ingredient_#{n}", @tab_ingredients %>
-
-        <br>
-      <% end %>
-    </div>
-
-    <h1>Etapes</h1>
-
-    <div class="field">
-      <% (1..4).each do |n| %>
-        <%= form.label :label, "Etape " + n.to_s %>
-        <br>
-        <%= form.text_area :"etape_#{n}", size: "50x5" %>
-        <br>
-      <% end %>
-    </div>
-
-    <div class="actions">
-    <%= form.submit %>
-    </div>
-  <% end %>
-  </section>
+  <div class="actions">
+   <%= form.submit %>
+  </div>
+<% end %>

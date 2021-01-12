@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>BackRuby</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks-track': 'reload' %>
-</head>
-
-<body>
 <%= render :partial => 'layouts/header', :formats => [:html] %>
 
 <section class="home-presentation">
@@ -16,7 +5,6 @@
     <h2>You never know what to eat ?</h2>
     <p>Don't panic, you've come to the right place. <br>
       Here you can search and add your best recipes in an instant!</p>
-    <a class="btn btn-primary">Get your random recipe</a>
   </div>
 </section>
 
@@ -24,21 +12,23 @@
   <% @recipes.each do |recipe| %>
     <div class="card-recipe">
 
-      <% if recipe.url %>
-        <div>
-          <img class="img-recipe" style="background-image: url(<%= recipe.url %>)"/>
-        </div>
-      <% else %>
-        <div>
-          <img class="img-recipe" style="background-image: url('https://ctt.trains.com/sitefiles/images/no-preview-available.png')"/>
-        </div>
-      <% end %>
+    <div>
+      <img class="img-recipe" src="<%= recipe.url %>"/>
+    </div>
+
 
       <h4><%= recipe.label %></h4>
       <hr>
       <div class="card-recipe-ingredient">
         <i class="fas fa-book-open"></i>
         <%= @recipeIngredients.where(recipe_id: recipe.id).length %> ingredients
+      </div>
+
+      <div class="card-recipe-ingredient" >
+        <% @creators.where(id: recipe.creator).each do |creator| %>
+          <i class="fas fa-user"></i>
+          <%= link_to creator.username, "/profil?id="+recipe.creator.to_s %>
+        <% end %>
       </div>
       <hr>
       <p><%= recipe.description %></p>
@@ -47,7 +37,3 @@
   <% end %>
   
 </section>
-  
-</body>
-</html>
-

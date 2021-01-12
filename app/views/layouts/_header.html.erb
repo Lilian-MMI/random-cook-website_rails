@@ -186,7 +186,7 @@
             <li>
               <a href="/sessions/new">Login</a>
             </li>
-          <li><a href="/inscription" class="btn btn-primary mt-1 mb-1">Get Started</a></li>
+          <li><a href="/inscription" class="btn btn-primary mt-1 mb-1">Sign In</a></li>
         </ul>
       </div>
 
@@ -195,7 +195,10 @@
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/profil#index">Add a recipe</a>
+            <a href="/recipe">Add a recipe</a>
+          </li>
+          <li>
+            <%= link_to "Random recipe", "recipe_random"%>
           </li>
           <li>
             <%= link_to "Random Week", "recipe_week"  %>
@@ -203,7 +206,7 @@
           <li>
             <%= link_to "Profil", "/profil?id="+cookies.permanent.signed[:remember_token][0].to_s %>
           </li>
-          <li><a href="/profil#index" class="btn btn-primary mt-1 mb-1">Deconnexion</a></li>
+          <li><a href="/sessions/destroy" class="btn btn-primary mt-1 mb-1">Deconnexion</a></li>
         </ul>
       </div>
 
