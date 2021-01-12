@@ -4,6 +4,15 @@
   <div>
     <h1>Sign Up</h1>
 
+    <% if params[:error] == "1" %>
+      <div class="message_error">
+        <p class="message">Votre mot de passe est différent de la confirmation</p>
+      </div>
+    <% elsif params[:error].nil? %>
+      <div class="message_error">
+      </div>
+    <% end %>
+
     <%= form_for(@user) do |f| %>
       <div class="field">
         <%= f.label :username %><br />
@@ -27,15 +36,6 @@
     <% end %>
 
     <p class="inscription-redirection" >Already register ?<%= link_to "Sign In !", "/sessions/new"  %></p>
-
-    <% if params[:error] == "1" %>
-      <div class="message_error">
-        <p class="message">Votre mot de passe est différent de la confirmation</p>
-      </div>
-    <% elsif params[:error].nil? %>
-      <div class="message_error">
-      </div>
-    <% end %>
   </div>
 
 </section>

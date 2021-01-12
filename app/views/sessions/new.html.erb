@@ -14,6 +14,9 @@
 <section class="signing-section">
   <div>
     <h1>Sign In</h1>
+    
+    <%= @error_message %>
+    
     <%= form_for(:session, :url => sessions_path) do |f| %>
       <div class="field">
         <%= f.label :email, "Email" %><br />
@@ -27,7 +30,6 @@
         <%= f.submit "Sign in" %>
       </div>
     <% end %>
-    <%= @error_message %>
 
     <p class="connexion-redirection">not yet registered ? <%= link_to "Sign up !", "/inscription"  %></p>
   </div>
