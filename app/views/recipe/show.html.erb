@@ -1,28 +1,72 @@
-<img src=<%= @recipe.url %> height=250 />
-<h1><%= @recipe.label %></h1>
-<h2><%= @recipe.description %></h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackRuby</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'recipe', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-<b>Pour le faire, il te faut :</b>
+<body>
+<%= render :partial => 'layouts/header', :formats => [:html] %>
 
-<br>
+  <section class="recipe-section">
 
-<% @recipeIngredients.each do |recipeIngredient| %>
-    <p> - <%= recipeIngredient.quantity %> <%= recipeIngredient.unity %>
+    <% if @recipe.url %>
+      <div class="recipe-image" style="background-image: url(<%= @recipe.url %>)">
+    <% else %>
+      <div class="recipe-image" style="background-image: url('https://ctt.trains.com/sitefiles/images/no-preview-available.png')">
+    <% end %>
 
-        <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
-            <%= ingredient.name %>
+      <% if @favorites.length === 0 %>
+        <%= link_to favorite_recipe_path(@recipe, type: "favorite"), method: :put do %>
+          <i class="far fa-heart"></i>
         <% end %>
+      <% else %>
+        <%= link_to favorite_recipe_path(@recipe, type: "unfavorite"), method: :delete do %>
+          <i class='fas fa-heart'></i>
+        <% end %>
+      <% end %>
 
-    </p>
+      </div>
 
-<% end %>
+      <div class="recipe-info">
+        <h1><%= @recipe.label %></h1>
+        <h2><%= @recipe.description %></h2>
+        <hr>
 
-<b>Pour le faire, il te faut :</b>
+        <p><b>Ingredients :</b></p>
 
-<% @steps.each_with_index  do |step, index| %>
-    <p> Step <%= index+1 %> :
-        <%= step.description %>
-    </p>
+        <div class="recipe-ingredient-group">
+          <% @recipeIngredients.each do |recipeIngredient| %>
+            <p class="recipe-ingredient"> <%= recipeIngredient.quantity.to_s.sub(/\.?0+$/, '') %> <%= recipeIngredient.unity %>
 
-<% end %>
+              <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
+                <%= ingredient.name %>
+              <% end %>
+            </p>
+
+          <% end %>
+        </div>
+        <hr>
+
+        <p><b>Steps :</b></p>
+
+        <div class="recipe-step-group">
+          <% @steps.each_with_index  do |step, index| %>
+            <p> <%= index+1 %> :
+              <%= step.description %>
+            </p>
+
+          <% end %>
+        </div>
+
+      </div>
+
+  </section>
+
+</body>
+</html>
+
 

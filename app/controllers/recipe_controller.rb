@@ -29,7 +29,7 @@ class RecipeController < ApplicationController
         @nom = params[:nom]
         @description = params[:description]
         @diet = params[:regime]
-        @url = ""
+        @url = "https://ctt.trains.com/sitefiles/images/no-preview-available.png"
         @preparation_time= params[:temps_prepa_h] + "h" + params[:temps_prepa_m]
         @baking_time= params[:temps_cuisson_h] + "h" + params[:temps_cuisson_h]
         @resting_time= params[:temps_repos_h] + "h" + params[:temps_repos_h]
@@ -102,6 +102,7 @@ class RecipeController < ApplicationController
             redirect_back fallback_location: root_path
         end
     end
+
     def recipe_random
         @rand_recipes = Recipe.all.pluck.shuffle[0] do |recipe_id|
             Recipe.find(recipe_id)
@@ -110,6 +111,14 @@ class RecipeController < ApplicationController
         @ingredients = Ingredient.all
         @steps = Step.where(recipe_id: @rand_recipes[0])
         @favorites = Favorite.where(recipe_id: @rand_recipes[0]).where(user_id: 1)
+
+
+    def delete
+        @id = cookies.permanent.signed[:remember_token][0]
+        Recipe.delete_by(id: params[:id])
+
+        redirect_to "/profil?id="+@id.to_s
+
     end
 
     def random_week
