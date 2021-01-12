@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "/recipe", to:"recipe#index"
   get "/recipe/:id", to: "recipe#show"
 
-  get "/recipe_random", to: "recipe_random#index"
+  get "/recipe_random", to: "recipe#recipe_random"
   resources :recipe
   
   get 'user/index'

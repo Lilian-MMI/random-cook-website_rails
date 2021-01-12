@@ -89,5 +89,8 @@ class RecipeController < ApplicationController
         @rand_recipes = Recipe.all.pluck.shuffle[0] do |recipe_id|
             Recipe.find(recipe_id)
         end
+        @recipeIngredients = RecipeIngredient.where(recipe_id: @rand_recipes[0])
+        @ingredients = Ingredient.where(id: @recipeIngredients)
+        @steps = Step.where(recipe_id: @rand_recipes[0])
     end
 end

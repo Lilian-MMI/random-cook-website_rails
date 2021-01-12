@@ -1,7 +1,31 @@
 <h1>Recette aléatoire</h1> 
 
-
+<%= link_to "Recette random", "/recipe_random" %>
+</br>
 <img src=<%= @rand_recipes[3] %> height=250 />
-<h2><%= @rand_recipes[1] %></h2>
-<p><%= @rand_recipes[2] %></p>
-<p><%= @rand_recipes[4] %></p>
+<h1><%= @rand_recipes[1] %></h1>
+<h2><%= @rand_recipes[2] %></h2>
+
+<b>Pour le faire, il te faut :</b>
+
+<br>
+
+<% @recipeIngredients.each do |recipeIngredient| %>
+    <p> - <%= recipeIngredient.quantity %> <%= recipeIngredient.unity %>
+
+        <% @ingredients.where(id: recipeIngredient.ingredient_id).each do |ingredient| %>
+            <%= ingredient.name %>
+        <% end %>
+
+    </p>
+
+<% end %>
+
+<b>Pour le faire, il te faut :</b>
+
+<% @steps.each_with_index  do |step, index| %>
+    <p> Step <%= index+1 %> :
+        <%= step.description %>
+    </p>
+<% end %>
+
