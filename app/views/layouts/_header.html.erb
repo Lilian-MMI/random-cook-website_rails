@@ -179,14 +179,14 @@
       <a class="navbar-brand" href="/">Recip<b>Andom</b></a>
     </div>
 
-    <% if 1 === 1 %>
+    <% if !cookies.permanent.signed[:remember_token] %>
 
       <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="/profil#index">Login</a>
+              <a href="/sessions/new">Login</a>
             </li>
-          <li><a href="/profil#index" class="btn btn-primary mt-1 mb-1">Get Started</a></li>
+          <li><a href="/inscription" class="btn btn-primary mt-1 mb-1">Get Started</a></li>
         </ul>
       </div>
 
@@ -197,7 +197,13 @@
           <li>
             <a href="/profil#index">Add a recipe</a>
           </li>
-          <li><a href="/profil#index" class="btn btn-primary mt-1 mb-1">My Profile</a></li>
+          <li>
+            <%= link_to "Random Week", "recipe_week"  %>
+          </li>
+          <li>
+            <%= link_to "Profil", "/profil?id="+cookies.permanent.signed[:remember_token][0].to_s %>
+          </li>
+          <li><a href="/profil#index" class="btn btn-primary mt-1 mb-1">Deconnexion</a></li>
         </ul>
       </div>
 
