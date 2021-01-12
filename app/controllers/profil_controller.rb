@@ -9,5 +9,9 @@ class ProfilController < ApplicationController
     @favorites = Favorite.where(user: @user)
 
     @recipes = Recipe.where(creator: @id)
+
+    @recipeIngredients = RecipeIngredient.all
+
+    @recipe_favorites = Recipe.joins(:favorites).where(favorites:{user_id: @id})
   end
 end
