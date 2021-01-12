@@ -1,35 +1,57 @@
-<h1>Inscription</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackRuby</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'inscription', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-<%= form_for(@user) do |f| %>
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username, required: true %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, required: true %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, required: true %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation, required: true%>
-  </div>
-  <div class="actions">
-    <%= f.submit "Inscription" %>
-  </div>
-<% end %>
+<body>
+<%= render :partial => 'layouts/header', :formats => [:html] %>
 
-<p>Déjà inscrit ? <%= link_to "Se connecter !", "/sessions/new"  %></p>
+<section class="signup-section">
+  <div>
+    <h1>Sign Up</h1>
 
-<% if params[:error] == "1" %>
-<div class="message_error">
-<p class="message">Votre mot de passe est différent de la confirmation</p>
-</div>
-<% elsif params[:error].nil? %>
-<div class="message_error">
-</div>
-<% end %>
+    <%= form_for(@user) do |f| %>
+      <div class="field">
+        <%= f.label :username %><br />
+        <%= f.text_field :username, required: true %>
+      </div>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, required: true %>
+      </div>
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, required: true %>
+      </div>
+      <div class="field">
+        <%= f.label :password_confirmation, "Confirmation" %><br />
+        <%= f.password_field :password_confirmation, required: true%>
+      </div>
+      <div class="actions">
+        <%= f.submit "Sign Up" %>
+      </div>
+    <% end %>
+
+    <p class="inscription-redirection" >Already register ?<%= link_to "Sign In !", "/sessions/new"  %></p>
+
+    <% if params[:error] == "1" %>
+      <div class="message_error">
+        <p class="message">Votre mot de passe est différent de la confirmation</p>
+      </div>
+    <% elsif params[:error].nil? %>
+      <div class="message_error">
+      </div>
+    <% end %>
+  </div>
+
+</section>
+
+</body>
+</html>
+
 
