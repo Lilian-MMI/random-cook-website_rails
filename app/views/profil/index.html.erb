@@ -1,6 +1,6 @@
 <%= render "layouts/header" %>
 <% if cookies.permanent.signed[:remember_token] %>
-  <% if cookies.permanent.signed[:remember_token][0] == params[:id] %>
+  <% if cookies.permanent.signed[:remember_token][0] == params[:id].to_i %>
   
   <h3 class="text-center">Mes favoris</h3>
   <section class="home-recipes">
@@ -27,7 +27,13 @@
 <%end%>
 <%end%>
 
-<h3 class="text-center">Mes recettes</h3>
+<% if cookies.permanent.signed[:remember_token] %>
+  <% if cookies.permanent.signed[:remember_token][0] == params[:id].to_i %>
+    <h3 class="text-center">Mes recettes</h3>
+  <% end %>
+<% else %>
+  <h3 class="text-center">Ses recettes</h3>  
+<% end %>
 <section class="home-recipes">
 
   <% @recipes.each do |recipe| %>
@@ -47,7 +53,7 @@
       <%= link_to "View Recipe", {controller: "recipe", action: "show", id: recipe.id}, class: 'btn btn-primary' %>
       <br><br>
       <% if cookies.permanent.signed[:remember_token] %>
-        <% if cookies.permanent.signed[:remember_token][0] == params[:id] %>
+        <% if cookies.permanent.signed[:remember_token][0] == params[:id].to_i %>
           <%= link_to "Delete Recipe", {controller: "recipe", action: "delete", id: recipe.id}, class: 'btn btn-danger' %>
         <%end %>
       <%end %>
