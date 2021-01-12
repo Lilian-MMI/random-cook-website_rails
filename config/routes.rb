@@ -15,13 +15,20 @@ Rails.application.routes.draw do
 
   get "/recipe_random", to: "recipe_random#index"
   resources :recipe
+  resources :recipe do
+    put :favorite, on: :member
+  end
+
+  get "/recipe/:id/favorite", to: "recipe#favorite"
   
 
   get 'user/index'
   get 'user/show'
   get 'user/new'
   resources :users
+
   resources :sessions, :only => [:new, :create, :destroy]
+
   get 'inscription', to: 'inscription#index'
   get 'sessions/create'
   get 'sessions/error'
