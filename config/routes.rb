@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get "/recipe_week", to: "recipe#random_week"
   get "/recipe/delete/:id", to: "recipe#delete"
 
-  get "/recipe_random", to: "recipe_random#index"
+  get "/recipe_random", to: "recipe#recipe_random"
   resources :recipe
   resources :recipe do
     put :favorite, on: :member

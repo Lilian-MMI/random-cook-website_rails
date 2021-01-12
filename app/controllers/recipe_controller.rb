@@ -103,11 +103,22 @@ class RecipeController < ApplicationController
         end
     end
 
+    def recipe_random
+        @rand_recipes = Recipe.all.pluck.shuffle[0] do |recipe_id|
+            Recipe.find(recipe_id)
+        end
+        @recipeIngredients = RecipeIngredient.where(recipe_id: @rand_recipes[0])
+        @ingredients = Ingredient.all
+        @steps = Step.where(recipe_id: @rand_recipes[0])
+        @favorites = Favorite.where(recipe_id: @rand_recipes[0]).where(user_id: 1)
+
+
     def delete
         @id = cookies.permanent.signed[:remember_token][0]
         Recipe.delete_by(id: params[:id])
 
         redirect_to "/profil?id="+@id.to_s
+
     end
 
     def random_week
