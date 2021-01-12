@@ -3,7 +3,7 @@
 <p>@user</p>
 <%= cookies.permanent.signed[:remember_token] %>
 <% if cookies.permanent.signed[:remember_token] %>
-<li><%= link_to "Déconnexion", signout_path, :method => :delete %></li>
+<li><%= link_to "Déconnexion", :controller => :sessions, :action => :destroy %></li>
 <% else %>
-<li><%= link_to "S'identifier" %></li>
+<li><%= link_to "S'identifier", :controller => :sessions, :action => :new %></li>
 <% end %>
